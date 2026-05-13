@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct EasyFriendApp: App {
+    // Com @Observable, usa-se @State em vez de @StateObject.
+    @State private var authViewModel = AuthViewModel()
+
     var body: some Scene {
         WindowGroup {
+            // Injeta no environment via .environment() (sem o "Object" no final).
             ContentView()
+                .environment(authViewModel)
         }
     }
 }

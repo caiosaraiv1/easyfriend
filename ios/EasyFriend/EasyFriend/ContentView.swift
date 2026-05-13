@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    // Com @Observable, le do environment pelo tipo da classe.
+    @Environment(AuthViewModel.self) private var authViewModel
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if authViewModel.isAuthenticated {
+            MainTabView()
+        } else {
+            LoginScreen()
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
+        .environment(AuthViewModel())
 }
