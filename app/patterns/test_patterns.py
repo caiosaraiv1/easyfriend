@@ -5,11 +5,11 @@ Rodar com: pytest -v
 """
 
 import pytest
-from app.patterns.observer import (
+from patterns.observer import (
     Evento, EventoSubject,
     PushNotifier, EmailNotifier, BadgeNotifier,
 )
-from app.patterns.strategy import (
+from patterns.strategy import (
     Usuario, Evento as EventoAgenda, Consulta,
     BuscaContext,
     BuscaPorIdioma, BuscaPorProximidade,
