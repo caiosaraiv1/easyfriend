@@ -10,6 +10,7 @@ from sqlalchemy import text
 from database import get_db, engine
 from models.db_models import Base
 from routes.radar import router as radar_router
+from routes.agenda import router as agenda_router
 
 # Cria as tabelas no banco se ainda não existirem
 Base.metadata.create_all(bind=engine)
@@ -19,7 +20,7 @@ app = FastAPI(title="EasyFriend", version="0.2.0")
 # Registra os routers
 from routes.radar import router as radar_router
 app.include_router(radar_router)
-
+app.include_router(agenda_router)
 
 @app.get("/health")
 def health(db: Session = Depends(get_db)):
