@@ -15,7 +15,7 @@
 # =============================================================
 
 from sqlalchemy.orm import Session
-from app.models.db_models import Usuario, Evento, Match, Mensagem, Apadrinhamento
+from models.db_models import Usuario, Evento, Match, Mensagem, Apadrinhamento
 
 
 # =============================================================
