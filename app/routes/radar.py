@@ -6,6 +6,7 @@ Endpoints do Radar — chamados pelo app iOS.
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
+from patterns.strategy import _haversine_km
 
 from database import get_db
 from services.radar_service import RadarService
@@ -55,6 +56,8 @@ def buscar_matches(
 ):
     """
     Busca usuários pelo critério escolhido na tela do iOS.
+    Retorna JSON enriquecido com coordenadas e raio de privacidade
+    para o mapa (MapCircle) do iOS.
     Demonstra a Strategy: troca o filtro sem alterar nenhuma classe existente.
     """
     service = RadarService(db)
@@ -63,9 +66,31 @@ def buscar_matches(
             criterio=criterio, valor=valor,
             lat=lat, lon=lon, raio_km=raio_km,
         )
-        return [
-            {"id": u.id, "nome": u.nome, "idioma": u.idioma, "pais_origem": u.pais_origem}
-            for u in usuarios
-        ]
+
+        resultado = []
+        for u in usuarios:
+            distancia = round(_haversine_km(lat, lon, u.lat, u.lon), 2)
+            raio_privacidade_metros = round(300.0 + (distancia * 100), 2)
+
+            resultado.append({
+                "id": u.id,
+                "usuario": {
+                    "id": u.id,
+                    "nome": u.nome,
+                    "idade": 25,            # placeholder até ter coluna no schema
+                    "pais_origem": u.pais_origem,
+                    "idiomas": [u.idioma],
+                    "interesses": [],       # placeholder
+                    "email": None,
+                },
+                "coordenada_lat": u.lat,
+                "coordenada_lon": u.lon,
+                "raio_privacidade_metros": round(300.0 + (distancia * 100), 2),
+                "distancia_km": distancia,
+                "criado_em": "2026-05-18T00:00:00Z",
+            })
+
+        return resultado
+
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
