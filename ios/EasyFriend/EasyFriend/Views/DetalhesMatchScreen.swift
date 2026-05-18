@@ -10,13 +10,14 @@ import SwiftUI
 struct DetalheMatchScreen: View {
     let match: Match
     @Environment(\.dismiss) private var dismiss
+    @Environment(AuthViewModel.self) private var authViewModel
     @State private var pedidoEnviado = false
     @State private var enviando = false
+    @State private var erroPedido: String?
 
     var body: some View {
         NavigationStack {
             VStack(spacing: 20) {
-                // Avatar grande
                 Circle()
                     .fill(Color.blue.opacity(0.2))
                     .frame(width: 100, height: 100)
@@ -27,7 +28,7 @@ struct DetalheMatchScreen: View {
                     )
 
                 VStack(spacing: 4) {
-                    Text("\(match.usuario.nome), \(match.usuario.idade)")
+                    Text(nomeComIdade)
                         .font(.title2)
                         .fontWeight(.semibold)
                     Text("\(match.usuario.paisOrigem) · ~\(String(format: "%.1f", match.distanciaKm)) km de você")
@@ -38,34 +39,47 @@ struct DetalheMatchScreen: View {
                 Divider()
 
                 VStack(alignment: .leading, spacing: 12) {
-                    secao(titulo: "IDIOMAS", items: match.usuario.idiomas)
-                    secao(titulo: "INTERESSES", items: match.usuario.interesses)
+                    if !match.usuario.idiomasExibidos.isEmpty {
+                        secao(titulo: "IDIOMAS", items: match.usuario.idiomasExibidos)
+                    }
+                    if let interesses = match.usuario.interesses, !interesses.isEmpty {
+                        secao(titulo: "INTERESSES", items: interesses)
+                    }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal)
 
                 Spacer()
 
-                // Acao principal: pedir apadrinhamento
                 if pedidoEnviado {
                     Label("Pedido enviado!", systemImage: "checkmark.circle.fill")
                         .foregroundStyle(.green)
                         .padding()
                 } else {
-                    Button {
-                        Task { await pedirApadrinhamento() }
-                    } label: {
-                        if enviando {
-                            ProgressView()
-                                .frame(maxWidth: .infinity)
-                        } else {
-                            Text("Pedir apadrinhamento")
-                                .frame(maxWidth: .infinity)
+                    VStack(spacing: 8) {
+                        if let erro = erroPedido {
+                            Text(erro)
+                                .font(.caption)
+                                .foregroundStyle(.red)
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal)
                         }
+
+                        Button {
+                            Task { await pedirApadrinhamento() }
+                        } label: {
+                            if enviando {
+                                ProgressView()
+                                    .frame(maxWidth: .infinity)
+                            } else {
+                                Text("Pedir apadrinhamento")
+                                    .frame(maxWidth: .infinity)
+                            }
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .disabled(enviando)
+                        .padding(.horizontal)
                     }
-                    .buttonStyle(.borderedProminent)
-                    .disabled(enviando)
-                    .padding(.horizontal)
                 }
             }
             .padding(.vertical)
@@ -77,6 +91,13 @@ struct DetalheMatchScreen: View {
                 }
             }
         }
+    }
+
+    private var nomeComIdade: String {
+        if let idade = match.usuario.idade {
+            return "\(match.usuario.nome), \(idade)"
+        }
+        return match.usuario.nome
     }
 
     private func secao(titulo: String, items: [String]) -> some View {
@@ -99,16 +120,39 @@ struct DetalheMatchScreen: View {
 
     private func pedirApadrinhamento() async {
         enviando = true
+        erroPedido = nil
         defer { enviando = false }
 
-        // Endpoint do backend: POST /apadrinhamento/solicitar
-        // No backend, isso dispara o Observer (PushNotifier, EmailNotifier).
-        // Por enquanto, simula sucesso apos delay.
-        try? await Task.sleep(nanoseconds: 600_000_000)
-        pedidoEnviado = true
+        // Estrutura esperada pelo backend (app/routes/apadrinhamento.py):
+        //   { "padrinho_id": int, "afilhado_id": int }
+        struct SolicitacaoBody: Codable {
+            let padrinhoId: Int
+            let afilhadoId: Int
+        }
+
+        guard let usuarioAtualId = authViewModel.usuarioAtual?.id else {
+            erroPedido = "Voce precisa estar logado para fazer pedidos."
+            return
+        }
+
+        let body = SolicitacaoBody(
+            padrinhoId: match.usuario.id,
+            afilhadoId: usuarioAtualId
+        )
+
+        do {
+            let _: ApadrinhamentoResponse = try await APIClient.shared.post(
+                "/apadrinhamento/solicitar",
+                body: body
+            )
+            pedidoEnviado = true
+        } catch {
+            erroPedido = "Falha ao enviar: \(error.localizedDescription)"
+        }
     }
 }
 
 #Preview {
     DetalheMatchScreen(match: MockData.matches(criterio: "proximidade")[0])
+        .environment(AuthViewModel())
 }
