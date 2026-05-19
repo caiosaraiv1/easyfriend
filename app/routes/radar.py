@@ -2,32 +2,27 @@
 app/routes/radar.py
 Endpoints do Radar — chamados pelo app iOS.
 """
-
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
+from sqlalchemy.exc import IntegrityError
 from pydantic import BaseModel
 from patterns.strategy import _haversine_km
-
 from database import get_db
 from services.radar_service import RadarService
 
 router = APIRouter(prefix="/radar", tags=["Radar"])
 
-
 # ---------------------------------------------------------------------------
 # Schemas de entrada
 # ---------------------------------------------------------------------------
-
 class MatchCreate(BaseModel):
     usuario_a_id: int
     usuario_b_id: int
     criterio: str = "idioma"   # idioma | proximidade | pais_origem | tipo
 
-
 # ---------------------------------------------------------------------------
 # Endpoints
 # ---------------------------------------------------------------------------
-
 @router.post("/matches", status_code=201)
 def criar_match(body: MatchCreate, db: Session = Depends(get_db)):
     """
@@ -43,6 +38,8 @@ def criar_match(body: MatchCreate, db: Session = Depends(get_db)):
         )
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
+    except IntegrityError:
+        raise HTTPException(status_code=409, detail="Match entre esses usuários já existe.")
 
 
 @router.get("/matches")
@@ -66,31 +63,27 @@ def buscar_matches(
             criterio=criterio, valor=valor,
             lat=lat, lon=lon, raio_km=raio_km,
         )
-
         resultado = []
         for u in usuarios:
             distancia = round(_haversine_km(lat, lon, u.lat, u.lon), 2)
             raio_privacidade_metros = round(300.0 + (distancia * 100), 2)
-
             resultado.append({
                 "id": u.id,
                 "usuario": {
                     "id": u.id,
                     "nome": u.nome,
-                    "idade": 25,            # placeholder até ter coluna no schema
+                    "idade": 25,
                     "pais_origem": u.pais_origem,
                     "idiomas": [u.idioma],
-                    "interesses": [],       # placeholder
+                    "interesses": [],
                     "email": None,
                 },
                 "coordenada_lat": u.lat,
                 "coordenada_lon": u.lon,
-                "raio_privacidade_metros": round(300.0 + (distancia * 100), 2),
+                "raio_privacidade_metros": raio_privacidade_metros,
                 "distancia_km": distancia,
                 "criado_em": "2026-05-18T00:00:00Z",
             })
-
         return resultado
-
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
