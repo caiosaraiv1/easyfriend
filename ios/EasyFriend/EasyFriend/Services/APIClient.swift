@@ -36,7 +36,34 @@ class APIClient {
     private var decoder: JSONDecoder {
         let d = JSONDecoder()
         d.keyDecodingStrategy = .convertFromSnakeCase
-        d.dateDecodingStrategy = .iso8601
+        d.dateDecodingStrategy = .custom { decoder in
+            let container = try decoder.singleValueContainer()
+            let string = try container.decode(String.self)
+
+            let formatter = DateFormatter()
+            formatter.locale = Locale(identifier: "en_US_POSIX")
+            formatter.timeZone = TimeZone(secondsFromGMT: 0)
+
+            //1 com microssegundos (formato Python isoformat)
+            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSS"
+            if let date = formatter.date(from: string) { return date }
+
+            //2 sem fração de segundo
+            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+            if let date = formatter.date(from: string) { return date }
+
+            //3 ISO 8601 padrão (com Z ou offset)
+            let iso = ISO8601DateFormatter()
+            iso.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+            if let date = iso.date(from: string) { return date }
+            iso.formatOptions = [.withInternetDateTime]
+            if let date = iso.date(from: string) { return date }
+
+            throw DecodingError.dataCorruptedError(
+                in: container,
+                debugDescription: "Data em formato não reconhecido: '\(string)'"
+            )
+        }
         return d
     }
 
