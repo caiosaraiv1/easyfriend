@@ -27,15 +27,15 @@ class AuthViewModel {
         errorMessage = nil
         defer { isLoading = false }
 
-        struct LoginRequest: Codable {
-            let email: String
-            let senha: String
-        }
-
         do {
-            let resp: LoginResponse = try await APIClient.shared.post(
+            //backend usa FastAPI OAuth2PasswordRequestForm
+            // application/x-www-form-urlencoded com campos "username" e "password".
+            let resp: LoginResponse = try await APIClient.shared.postFormData(
                 "/auth/login",
-                body: LoginRequest(email: email, senha: senha)
+                fields: [
+                    "username": email,
+                    "password": senha
+                ]
             )
             AuthService.shared.token = resp.accessToken
             isAuthenticated = true
@@ -53,7 +53,8 @@ class AuthViewModel {
 
     private func carregarUsuarioAtual() async {
         do {
-            usuarioAtual = try await APIClient.shared.get("/usuarios/me")
+            //caminho: /auth/me
+            usuarioAtual = try await APIClient.shared.get("/auth/me")
         } catch {
             print("Falha ao carregar usuario atual: \(error)")
         }

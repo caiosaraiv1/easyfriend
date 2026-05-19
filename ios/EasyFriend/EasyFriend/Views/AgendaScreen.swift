@@ -77,13 +77,15 @@ struct EventoRow: View {
                     .font(.caption2)
                 Text(dataFormatada(evento.dataInicio))
                 Text("·")
-                Text(evento.local)
+                Text(evento.localExibido)
             }
             .font(.caption)
             .foregroundStyle(.secondary)
-            Text("\(evento.interessados) interessados")
-                .font(.caption)
-                .foregroundStyle(.secondary)
+            if evento.interessadosExibidos > 0 {
+                Text("\(evento.interessadosExibidos) interessados")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
         }
         .padding(.vertical, 4)
     }

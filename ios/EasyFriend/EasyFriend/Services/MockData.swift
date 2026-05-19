@@ -6,6 +6,7 @@
 //
 
 //TODO: - Apagar depois
+
 import Foundation
 
 enum MockData {
@@ -15,33 +16,35 @@ enum MockData {
     static let usuarioAtual = Usuario(
         id: 1,
         nome: "Isabela Hissa",
-        idade: 22,
         paisOrigem: "Brasil",
-        idiomas: ["PT", "EN"],
+        idade: 22,
+        idioma: "pt",
+        idiomas: ["pt", "en"],
         interesses: ["Música", "Culinária", "Tecnologia"],
         email: "isabela@example.com"
     )
 
     static let usuarios: [Usuario] = [
-        Usuario(id: 2, nome: "Ana Silva", idade: 28, paisOrigem: "Brasil",
-                idiomas: ["PT", "EN"], interesses: ["Música", "Culinária"], email: nil),
-        Usuario(id: 3, nome: "Marco Rossi", idade: 34, paisOrigem: "Itália",
-                idiomas: ["IT", "EN", "PT"], interesses: ["Gastronomia", "Esportes"], email: nil),
-        Usuario(id: 4, nome: "Yuki Tanaka", idade: 26, paisOrigem: "Japão",
-                idiomas: ["JP", "EN"], interesses: ["Arte", "Anime"], email: nil),
-        Usuario(id: 5, nome: "Carmen López", idade: 31, paisOrigem: "Espanha",
-                idiomas: ["ES", "PT"], interesses: ["Música", "Dança"], email: nil)
+        Usuario(id: 2, nome: "Ana Silva", paisOrigem: "Brasil",
+                idade: 28, idioma: "pt",
+                idiomas: ["pt", "en"], interesses: ["Música", "Culinária"]),
+        Usuario(id: 3, nome: "Marco Rossi", paisOrigem: "Itália",
+                idade: 34, idioma: "it",
+                idiomas: ["it", "en", "pt"], interesses: ["Gastronomia", "Esportes"]),
+        Usuario(id: 4, nome: "Yuki Tanaka", paisOrigem: "Japão",
+                idade: 26, idioma: "ja",
+                idiomas: ["ja", "en"], interesses: ["Arte", "Anime"]),
+        Usuario(id: 5, nome: "Carmen López", paisOrigem: "Espanha",
+                idade: 31, idioma: "es",
+                idiomas: ["es", "pt"], interesses: ["Música", "Dança"])
     ]
 
-    // MARK: - Matches por criterio (simula o Strategy do backend)
+    // MARK: - Matches por criterio
 
     static func matches(criterio: String) -> [Match] {
-        // Centro fixo: Av. Paulista, Sao Paulo (referencia "voce esta aqui")
         let centroLat = -23.5631
         let centroLon = -46.6544
 
-        // Cada criterio retorna uma ordem/subset diferente para mostrar
-        // visualmente que o Strategy esta funcionando.
         switch criterio {
         case "proximidade":
             return [
@@ -59,7 +62,6 @@ enum MockData {
                       criadoEm: Date())
             ]
         case "idioma":
-            // So usuarios que falam PT
             return [
                 Match(id: 1, usuario: usuarios[0],
                       coordenadaLat: centroLat + 0.008, coordenadaLon: centroLon + 0.005,
@@ -74,8 +76,7 @@ enum MockData {
                       raioPrivacidadeMetros: 400, distanciaKm: 2.4,
                       criadoEm: Date())
             ]
-        case "pais":
-            // So brasileiros (mesmo pais que o usuario atual)
+        case "pais", "pais_origem":
             return [
                 Match(id: 1, usuario: usuarios[0],
                       coordenadaLat: centroLat + 0.008, coordenadaLon: centroLon + 0.005,
@@ -92,29 +93,34 @@ enum MockData {
     static func eventos(tipoFiltro: String?) -> [Evento] {
         let todos = [
             Evento(id: 1, titulo: "Festival Latino",
-                   descricao: "Música e dança da América Latina",
-                   tipo: "musica", local: "Parque Ibirapuera",
+                   tipo: "musica",
                    dataInicio: dataDeHoje(adicionando: 5),
+                   descricao: "Música e dança da América Latina",
+                   local: "Parque Ibirapuera",
                    interessados: 42),
             Evento(id: 2, titulo: "Roda de Samba",
-                   descricao: "Roda aberta com músicos da comunidade",
-                   tipo: "musica", local: "Vila Madalena",
+                   tipo: "musica",
                    dataInicio: dataDeHoje(adicionando: 8),
+                   descricao: "Roda aberta com músicos da comunidade",
+                   local: "Vila Madalena",
                    interessados: 15),
             Evento(id: 3, titulo: "Concerto Coreano",
-                   descricao: "Apresentação de música tradicional coreana",
-                   tipo: "musica", local: "MASP",
+                   tipo: "musica",
                    dataInicio: dataDeHoje(adicionando: 12),
+                   descricao: "Apresentação de música tradicional coreana",
+                   local: "MASP",
                    interessados: 8),
             Evento(id: 4, titulo: "Feira Italiana",
-                   descricao: "Comidas e doces típicos italianos",
-                   tipo: "gastronomia", local: "Bixiga",
+                   tipo: "gastronomia",
                    dataInicio: dataDeHoje(adicionando: 3),
+                   descricao: "Comidas e doces típicos italianos",
+                   local: "Bixiga",
                    interessados: 67),
             Evento(id: 5, titulo: "Exposição Japonesa",
-                   descricao: "Arte contemporânea japonesa",
-                   tipo: "arte", local: "Pinacoteca",
+                   tipo: "arte",
                    dataInicio: dataDeHoje(adicionando: 15),
+                   descricao: "Arte contemporânea japonesa",
+                   local: "Pinacoteca",
                    interessados: 23)
         ]
         guard let filtro = tipoFiltro else { return todos }
