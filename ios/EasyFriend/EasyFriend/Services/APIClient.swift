@@ -28,14 +28,14 @@ class APIClient {
     static let shared = APIClient()
     private init() {}
 
-    //trocar pra false dps
+    //false quando o backend estiver pronto
     private let USE_MOCK = false
 
     private let baseURL = "http://127.0.0.1:8000"
 
     private var decoder: JSONDecoder {
         let d = JSONDecoder()
-        d.keyDecodingStrategy = .convertFromSnakeCase
+
         d.dateDecodingStrategy = .custom { decoder in
             let container = try decoder.singleValueContainer()
             let string = try container.decode(String.self)
@@ -44,24 +44,27 @@ class APIClient {
             formatter.locale = Locale(identifier: "en_US_POSIX")
             formatter.timeZone = TimeZone(secondsFromGMT: 0)
 
-            //1 com microssegundos (formato Python isoformat)
-            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSS"
-            if let date = formatter.date(from: string) { return date }
-
-            //2 sem fração de segundo
-            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-            if let date = formatter.date(from: string) { return date }
-
-            //3 ISO 8601 padrão (com Z ou offset)
+            let formatos = [
+                "yyyy-MM-dd'T'HH:mm:ss.SSSSSS",
+                "yyyy-MM-dd'T'HH:mm:ss.SSSSSSXXXXX",
+                "yyyy-MM-dd'T'HH:mm:ss.SSS",
+                "yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX",
+                "yyyy-MM-dd'T'HH:mm:ss",
+                "yyyy-MM-dd'T'HH:mm:ssXXXXX",
+            ]
+            for f in formatos {
+                formatter.dateFormat = f
+                if let d = formatter.date(from: string) { return d }
+            }
             let iso = ISO8601DateFormatter()
             iso.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
-            if let date = iso.date(from: string) { return date }
+            if let d = iso.date(from: string) { return d }
             iso.formatOptions = [.withInternetDateTime]
-            if let date = iso.date(from: string) { return date }
+            if let d = iso.date(from: string) { return d }
 
             throw DecodingError.dataCorruptedError(
                 in: container,
-                debugDescription: "Data em formato não reconhecido: '\(string)'"
+                debugDescription: "Data em formato nao reconhecido: '\(string)'"
             )
         }
         return d
@@ -115,9 +118,6 @@ class APIClient {
 
     // MARK: - POST form-data (para /auth/login)
 
-    /// Envia POST com Content-Type: application/x-www-form-urlencoded.
-    /// Necessario porque o FastAPI usa OAuth2PasswordRequestForm no /auth/login,
-    /// que so aceita form-data (nao JSON).
     func postFormData<T: Decodable>(_ path: String, fields: [String: String]) async throws -> T {
         if USE_MOCK { return try mockResponse(for: path) }
 
@@ -126,7 +126,6 @@ class APIClient {
         request.httpMethod = "POST"
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
 
-        // cdifica os campos no formato chave=valor&chave=valor com URL encoding
         let bodyString = fields.map { (key, value) -> String in
             let encodedKey = key.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? key
             let encodedValue = value.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? value
@@ -144,7 +143,7 @@ class APIClient {
         }
     }
 
-    // MARK: - PATCH (para /apadrinhamento/{id}/aceitar)
+    // MARK: - PATCH
 
     func patch<T: Decodable>(_ path: String) async throws -> T {
         if USE_MOCK { return try mockResponse(for: path) }
@@ -163,7 +162,7 @@ class APIClient {
         }
     }
 
-    // MARK: - Helpers privados
+    // MARK: - Helpers
 
     private func addAuthHeader(to request: inout URLRequest) {
         if let token = AuthService.shared.token {
@@ -179,7 +178,7 @@ class APIClient {
         }
     }
 
-    // MARK: - Mocks
+    // MARK: - Mocks (so usado se USE_MOCK = true)
 
     private func mockResponse<T: Decodable>(for path: String) throws -> T {
         Thread.sleep(forTimeInterval: 0.4)
@@ -219,13 +218,18 @@ class APIClient {
     }
 }
 
-// MARK: - Respostas tipadas
-
 struct LoginResponse: Codable {
     let accessToken: String
     let tokenType: String
     let usuarioId: Int
     let nome: String
+
+    enum CodingKeys: String, CodingKey {
+        case accessToken = "access_token"
+        case tokenType = "token_type"
+        case usuarioId = "usuario_id"
+        case nome
+    }
 }
 
 struct ApadrinhamentoResponse: Codable {

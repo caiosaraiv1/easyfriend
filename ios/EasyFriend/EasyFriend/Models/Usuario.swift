@@ -12,37 +12,67 @@ struct Usuario: Codable, Identifiable {
     let nome: String
     let paisOrigem: String
 
-    // Campos opcionais
     let idade: Int?
-    let idioma: String? // /auth/me retorna idioma singular
-    let idiomas: [String]? // /radar/matches retorna lista
+    let idioma: String?
+    let idiomas: [String]?
     let interesses: [String]?
     let email: String?
 
-    //custom decoding para aceitar tanto "usuario_id" quanto "id" do backend.
-    enum CodingKeys: String, CodingKey {
-        case id, usuarioId = "usuario_id"
-        case nome, paisOrigem, idade, idioma, idiomas, interesses, email
+    private struct AnyKey: CodingKey {
+        var stringValue: String
+        var intValue: Int? { nil }
+        init(stringValue: String) { self.stringValue = stringValue }
+        init?(intValue: Int) { return nil }
     }
 
     init(from decoder: Decoder) throws {
-        let c = try decoder.container(keyedBy: CodingKeys.self)
-        // Tenta "id" primeiro, depois "usuario_id"
-        if let i = try? c.decode(Int.self, forKey: .id) {
-            self.id = i
-        } else {
-            self.id = try c.decode(Int.self, forKey: .usuarioId)
+        let c = try decoder.container(keyedBy: AnyKey.self)
+
+        func first<T: Decodable>(_ type: T.Type, _ keys: [String]) -> T? {
+            for k in keys {
+                let key = AnyKey(stringValue: k)
+                if let value = try? c.decode(T.self, forKey: key) {
+                    return value
+                }
+            }
+            return nil
         }
-        self.nome = try c.decode(String.self, forKey: .nome)
-        self.paisOrigem = try c.decode(String.self, forKey: .paisOrigem)
-        self.idade = try c.decodeIfPresent(Int.self, forKey: .idade)
-        self.idioma = try c.decodeIfPresent(String.self, forKey: .idioma)
-        self.idiomas = try c.decodeIfPresent([String].self, forKey: .idiomas)
-        self.interesses = try c.decodeIfPresent([String].self, forKey: .interesses)
-        self.email = try c.decodeIfPresent(String.self, forKey: .email)
+
+        //id pode vir como "id" (radar) ou "usuario_id"/"usuarioId" (auth/me)
+        guard let id = first(Int.self, ["id", "usuario_id", "usuarioId"]) else {
+            throw DecodingError.keyNotFound(
+                AnyKey(stringValue: "id"),
+                .init(codingPath: decoder.codingPath,
+                      debugDescription: "Nem 'id' nem 'usuario_id' encontrados.")
+            )
+        }
+        self.id = id
+
+        guard let nome = first(String.self, ["nome"]) else {
+            throw DecodingError.keyNotFound(
+                AnyKey(stringValue: "nome"),
+                .init(codingPath: decoder.codingPath,
+                      debugDescription: "Campo 'nome' obrigatorio nao encontrado.")
+            )
+        }
+        self.nome = nome
+
+        guard let pais = first(String.self, ["pais_origem", "paisOrigem"]) else {
+            throw DecodingError.keyNotFound(
+                AnyKey(stringValue: "pais_origem"),
+                .init(codingPath: decoder.codingPath,
+                      debugDescription: "Campo 'pais_origem' obrigatorio nao encontrado.")
+            )
+        }
+        self.paisOrigem = pais
+
+        self.idade = first(Int.self, ["idade"])
+        self.idioma = first(String.self, ["idioma"])
+        self.idiomas = first([String].self, ["idiomas"])
+        self.interesses = first([String].self, ["interesses"])
+        self.email = first(String.self, ["email"])
     }
 
-    //init manual para usar em mockdata
     init(id: Int, nome: String, paisOrigem: String,
          idade: Int? = nil, idioma: String? = nil,
          idiomas: [String]? = nil, interesses: [String]? = nil,
@@ -57,22 +87,20 @@ struct Usuario: Codable, Identifiable {
         self.email = email
     }
 
-    // Helper: retorna a lista de idiomas, normalizando entre os dois formatos.
     var idiomasExibidos: [String] {
         if let lista = idiomas, !lista.isEmpty { return lista }
         if let unico = idioma { return [unico] }
         return []
     }
 
-    func encode(to encoder: Encoder) throws {
-        var c = encoder.container(keyedBy: CodingKeys.self)
-        try c.encode(id, forKey: .id)
-        try c.encode(nome, forKey: .nome)
-        try c.encode(paisOrigem, forKey: .paisOrigem)
-        try c.encodeIfPresent(idade, forKey: .idade)
-        try c.encodeIfPresent(idioma, forKey: .idioma)
-        try c.encodeIfPresent(idiomas, forKey: .idiomas)
-        try c.encodeIfPresent(interesses, forKey: .interesses)
-        try c.encodeIfPresent(email, forKey: .email)
+    enum CodingKeys: String, CodingKey {
+        case id
+        case nome
+        case paisOrigem = "pais_origem"
+        case idade
+        case idioma
+        case idiomas
+        case interesses
+        case email
     }
 }
