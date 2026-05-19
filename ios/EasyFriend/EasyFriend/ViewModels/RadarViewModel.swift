@@ -11,7 +11,7 @@ import MapKit
 enum CriterioRadar: String, CaseIterable, Identifiable {
     case proximidade = "proximidade"
     case idioma = "idioma"
-    case pais = "pais"
+    case pais = "pais_origem"
 
     var id: String { rawValue }
 
@@ -42,7 +42,24 @@ class RadarViewModel {
         errorMessage = nil
         defer { isLoading = false }
 
-        let path = "/radar/matches?criterio=\(criterio.rawValue)"
+        //coordenadas do "usuário" — Av. Paulista (hardcoded por enquanto)
+        let lat = regiaoMapa.center.latitude
+        let lon = regiaoMapa.center.longitude
+
+        let valor: String
+        switch criterio {
+        case .proximidade: valor = ""        // proximidade não usa valor
+        case .idioma:      valor = "pt"      // idioma do usuário logado
+        case .pais:        valor = "Brasil"  // país do usuário logado
+        }
+
+        //query string completa
+        var path = "/radar/matches?criterio=\(criterio.rawValue)"
+        if !valor.isEmpty {
+            path += "&valor=\(valor)"
+        }
+        path += "&lat=\(lat)&lon=\(lon)&raio_km=50"
+
         do {
             matches = try await APIClient.shared.get(path)
         } catch {

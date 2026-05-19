@@ -29,7 +29,7 @@ class APIClient {
     private init() {}
 
     //trocar pra false dps
-    private let USE_MOCK = true
+    private let USE_MOCK = false
 
     private let baseURL = "http://127.0.0.1:8000"
 
