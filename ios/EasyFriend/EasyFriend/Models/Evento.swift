@@ -23,6 +23,16 @@ struct Evento: Codable, Identifiable {
     var descricaoExibida: String { descricao ?? "" }
     var localExibido: String { local ?? "Local a confirmar" }
     var interessadosExibidos: Int { interessados ?? 0 }
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case titulo
+        case tipo
+        case dataInicio = "data_inicio"
+        case descricao
+        case local
+        case interessados
+    }
 }
 
 //tipos de evento disponiveis
