@@ -233,6 +233,30 @@ struct LoginResponse: Codable {
 }
 
 struct ApadrinhamentoResponse: Codable {
-    let id: Int
-    let status: String
+    let id: Int?
+    let status: String?
+    let padrinho: String?
+    let afilhado: String?
+
+    enum CodingKeys: String, CodingKey {
+        case id = "apadrinhamento_id"
+        case status
+        case padrinho
+        case afilhado
+    }
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try c.decodeIfPresent(Int.self, forKey: .id)
+        self.status = try c.decodeIfPresent(String.self, forKey: .status)
+        self.padrinho = try c.decodeIfPresent(String.self, forKey: .padrinho)
+        self.afilhado = try c.decodeIfPresent(String.self, forKey: .afilhado)
+    }
+
+    init(id: Int?, status: String?, padrinho: String? = nil, afilhado: String? = nil) {
+        self.id = id
+        self.status = status
+        self.padrinho = padrinho
+        self.afilhado = afilhado
+    }
 }
