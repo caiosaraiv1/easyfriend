@@ -59,7 +59,7 @@ struct LoginScreen: View {
                 .disabled(authViewModel.isLoading)
 
                 Button("Criar conta") {
-                    // TODO: tela de cadastro (fora do escopo do MVP)
+                    
                 }
                 .font(.caption)
                 .foregroundStyle(.secondary)

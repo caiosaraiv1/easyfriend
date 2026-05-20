@@ -9,12 +9,12 @@ import SwiftUI
 import MapKit
 
 struct RadarScreen: View {
-    // @State substitui @StateObject.
+    
     @State private var viewModel = RadarViewModel()
     @State private var matchSelecionado: Match?
 
     var body: some View {
-        // @Bindable habilita o uso de $ para criar bindings com @Observable.
+        //Bindable habilita o uso de $ para criar bindings com @Observable.
         @Bindable var viewModel = viewModel
 
         NavigationStack {

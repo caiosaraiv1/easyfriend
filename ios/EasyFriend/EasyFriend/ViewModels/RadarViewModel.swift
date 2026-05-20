@@ -48,9 +48,9 @@ class RadarViewModel {
 
         let valor: String
         switch criterio {
-        case .proximidade: valor = ""        // proximidade não usa valor
-        case .idioma:      valor = "pt"      // idioma do usuário logado
-        case .pais:        valor = "Brasil"  // país do usuário logado
+        case .proximidade: valor = "" // proximidade não usa valor
+        case .idioma:      valor = "pt" //idioma do usuário
+        case .pais:        valor = "Brasil"  // país do usuário
         }
 
         //query string completa
