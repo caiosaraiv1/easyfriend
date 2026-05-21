@@ -3,12 +3,17 @@ app/routes/chat.py
 Endpoints de Chat — M4-02.
 """
 
+import logging
+from logging_config import get_logger
+
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
 
 from database import get_db
 from services.chat_service import ChatService
+
+logger = get_logger(__name__)
 
 router = APIRouter(prefix="/chat", tags=["Chat"])
 
@@ -27,6 +32,7 @@ def enviar_mensagem(body: MensagemCreate, db: Session = Depends(get_db)):
     """
     service = ChatService(db)
     try:
+        logger.info(f"Mensagem de {body.remetente_id} -> {body.destinatario_id}")
         return service.enviar_mensagem(
             remetente_id=body.remetente_id,
             destinatario_id=body.destinatario_id,

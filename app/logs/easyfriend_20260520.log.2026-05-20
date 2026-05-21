@@ -1,0 +1,383 @@
+2026-05-20 13:48:27 [INFO] main: Tabelas verificadas/criadas no banco.
+2026-05-20 13:56:57 [INFO] main: Tabelas verificadas/criadas no banco.
+2026-05-20 13:59:26 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 13:59:28 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 13:59:33 [DEBUG] watchfiles.main: 2 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python')}
+2026-05-20 13:59:33 [DEBUG] watchfiles.main: 1 change detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 14:03:20 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 14:03:22 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 14:09:40 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 14:09:42 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 14:15:46 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 14:15:58 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 14:19:58 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 14:20:00 [DEBUG] watchfiles.main: 2 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python')}
+2026-05-20 14:20:00 [DEBUG] watchfiles.main: 1 change detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 14:28:14 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 14:28:17 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 14:32:16 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 14:32:18 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 14:39:14 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 14:39:16 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 14:42:29 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 14:42:30 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 14:46:42 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 14:46:43 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 14:52:13 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 14:52:16 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:00:39 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:00:40 [DEBUG] watchfiles.main: 2 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python')}
+2026-05-20 15:00:40 [DEBUG] watchfiles.main: 1 change detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:02:43 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:02:43 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:04:03 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:04:04 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:05:47 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:05:48 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:07:21 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:07:21 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:08:51 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:08:53 [DEBUG] watchfiles.main: 1 change detected: {(<Change.deleted: 3>, '/app/venv/bin/python')}
+2026-05-20 15:08:54 [DEBUG] watchfiles.main: 2 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:14:17 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:14:19 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:19:09 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:19:09 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:21:32 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:21:32 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:23:34 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:23:35 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:25:19 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:25:20 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:26:58 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:26:59 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:28:25 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:28:26 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:30:29 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:30:29 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:31:50 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:31:51 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:32:52 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:32:52 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:33:49 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:33:50 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:34:36 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:34:36 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:35:22 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:35:23 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:36:19 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:36:20 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:37:13 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:37:14 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:40:24 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:40:24 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:42:48 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:42:49 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:44:05 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 15:44:07 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 15:57:08 [INFO] main: Tabelas verificadas/criadas no banco.
+2026-05-20 15:57:19 [INFO] main: Tabelas verificadas/criadas no banco.
+2026-05-20 19:54:48 [DEBUG] watchfiles.main: 4 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.modified: 2>, '/app/logs/easyfriend_20260520.log'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 19:54:49 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 19:55:47 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 19:55:48 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 19:56:32 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 19:56:32 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 19:57:12 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 19:57:11 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 19:57:49 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 19:57:49 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 19:58:33 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 19:58:34 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 19:59:15 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 19:59:15 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 19:59:53 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 19:59:53 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:00:51 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:00:51 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:01:30 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:01:30 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:02:10 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:02:10 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:02:48 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:02:48 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:03:29 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:03:29 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:04:23 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:04:23 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:05:30 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:05:31 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:06:24 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:06:24 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:07:11 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:07:11 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:07:51 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:07:52 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:08:31 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:08:32 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:09:12 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:09:12 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:09:55 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:09:55 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:10:34 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:10:35 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:11:13 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:11:13 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:11:54 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:11:54 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:12:34 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:12:35 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:13:15 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:13:15 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:13:58 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:13:58 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:14:39 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:14:39 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:15:14 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:15:14 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:15:50 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:15:50 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:16:25 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:16:25 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:17:00 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:17:00 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:17:34 [DEBUG] watchfiles.main: 4 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.modified: 2>, '/app/logs/easyfriend_20260520.log'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:18:09 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:18:10 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:18:45 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:18:45 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:19:20 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:19:21 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:19:56 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:19:57 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:20:31 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:20:31 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:21:06 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:21:07 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:21:40 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:21:40 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:22:17 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:22:17 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:22:52 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:22:52 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:23:27 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:23:28 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:24:05 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:24:05 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:24:43 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:24:44 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:25:19 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:25:19 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:25:55 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:25:55 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:26:30 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:26:31 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:27:06 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:27:06 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:27:42 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:27:42 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:28:34 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:28:35 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:29:14 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:29:15 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:29:52 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:29:53 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:30:32 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:30:32 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:31:11 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:31:11 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:31:49 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:31:49 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:32:29 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:32:29 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:33:09 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:33:09 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:33:51 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:33:51 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:34:29 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:34:30 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:35:50 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:35:50 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:36:43 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:36:44 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:37:28 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:37:29 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:38:14 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:38:15 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:38:59 [DEBUG] watchfiles.main: 4 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.modified: 2>, '/app/logs/easyfriend_20260520.log'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:39:43 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:39:43 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:40:44 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:40:44 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:41:22 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:41:23 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:42:05 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:42:05 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:42:53 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:42:53 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 20:43:44 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 20:43:45 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3')}
+2026-05-20 22:40:45 [INFO] main: Tabelas verificadas/criadas no banco.
+2026-05-20 22:40:51 [INFO] main: Tabelas verificadas/criadas no banco.
+2026-05-20 22:41:51 [DEBUG] watchfiles.main: 4 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.modified: 2>, '/app/logs/easyfriend_20260520.log'), (<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python')}
+2026-05-20 22:41:52 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python')}
+2026-05-20 22:42:45 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 22:42:46 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python')}
+2026-05-20 22:43:31 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 22:43:31 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python')}
+2026-05-20 22:44:38 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 22:44:39 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python')}
+2026-05-20 22:46:49 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 22:46:49 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12'), (<Change.deleted: 3>, '/app/venv/bin/python')}
+2026-05-20 22:48:46 [INFO] main: Tabelas verificadas/criadas no banco.
+2026-05-20 22:48:55 [INFO] main: Tabelas verificadas/criadas no banco.
+2026-05-20 22:50:57 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 22:50:58 [DEBUG] watchfiles.main: 4 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.modified: 2>, '/app/logs/easyfriend_20260520.log'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 22:53:06 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 22:53:07 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 22:54:03 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 22:54:03 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 22:55:55 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 22:55:56 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 22:57:09 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 22:57:10 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 22:58:19 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 22:58:19 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:00:11 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:00:13 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:01:16 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:01:16 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:02:16 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:02:16 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:03:21 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:03:21 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:04:08 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:04:08 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:05:01 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:05:02 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:05:50 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:05:51 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:06:35 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:06:37 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:07:27 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:07:28 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:08:18 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:08:18 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:09:12 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:09:12 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:09:57 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:09:58 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:10:43 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:10:43 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:11:28 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:11:28 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:12:14 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:12:14 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:13:05 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:13:05 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:13:50 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:13:50 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:14:28 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:14:28 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:15:12 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:15:13 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:16:06 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:16:06 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:17:00 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:17:01 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:17:50 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:17:50 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:19:02 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:19:03 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:19:55 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:19:56 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:21:13 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:21:13 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:22:13 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:22:13 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:24:43 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:24:44 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:25:36 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:25:37 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:26:37 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:26:38 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:27:25 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:27:26 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:29:37 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:29:38 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:30:17 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:30:17 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:30:53 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:30:53 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:31:40 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:31:40 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:32:46 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:32:47 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:34:01 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:34:02 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:35:02 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:35:03 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:35:48 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:35:48 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:36:28 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:36:28 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:37:09 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:37:10 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:37:48 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:37:49 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:38:28 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:38:29 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:39:10 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:39:10 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:39:55 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:39:55 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:40:36 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:40:36 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:41:16 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:41:16 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:41:54 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:41:55 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:42:29 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:42:30 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:43:06 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:43:07 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:43:43 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:43:43 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:44:16 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:44:17 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:44:51 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:44:51 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:45:27 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:45:27 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:46:04 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:46:04 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:46:40 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:46:40 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:47:14 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:47:14 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:47:48 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:47:49 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:48:22 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:48:23 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:48:57 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:48:58 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:49:33 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:49:33 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:50:08 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:50:08 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:50:43 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:50:44 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:51:19 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:51:19 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:52:07 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:52:07 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:54:57 [INFO] main: Tabelas verificadas/criadas no banco.
+2026-05-20 23:55:07 [INFO] main: Tabelas verificadas/criadas no banco.
+2026-05-20 23:56:22 [DEBUG] watchfiles.main: 4 changes detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:56:23 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:57:55 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:57:56 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:58:41 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:58:41 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 23:59:42 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260520.log')}
+2026-05-20 23:59:42 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}

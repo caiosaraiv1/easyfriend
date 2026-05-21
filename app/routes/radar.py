@@ -2,6 +2,9 @@
 app/routes/radar.py
 Endpoints do Radar — chamados pelo app iOS.
 """
+import logging
+from logging_config import get_logger
+
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
@@ -9,6 +12,8 @@ from pydantic import BaseModel
 from patterns.strategy import _haversine_km
 from database import get_db
 from services.radar_service import RadarService
+
+logger = get_logger(__name__)
 
 router = APIRouter(prefix="/radar", tags=["Radar"])
 
@@ -31,12 +36,14 @@ def criar_match(body: MatchCreate, db: Session = Depends(get_db)):
     """
     service = RadarService(db)
     try:
+        logger.info(f"Criando match: {body.usuario_a_id} x {body.usuario_b_id}")
         return service.criar_match(
             usuario_a_id=body.usuario_a_id,
             usuario_b_id=body.usuario_b_id,
             criterio=body.criterio,
         )
     except ValueError as e:
+        logger.warning(f"Match falhou: {e}")
         raise HTTPException(status_code=404, detail=str(e))
     except IntegrityError:
         raise HTTPException(status_code=409, detail="Match entre esses usuários já existe.")

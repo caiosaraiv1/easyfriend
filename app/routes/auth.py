@@ -7,6 +7,9 @@ POST /auth/login → retorna token JWT
 import os
 from datetime import datetime, timedelta, timezone
 
+import logging
+from logging_config import get_logger
+
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
@@ -15,6 +18,8 @@ from passlib.context import CryptContext
 
 from database import get_db
 from models.repositorios_CRUD import UsuarioRepo
+
+logger = get_logger(__name__)
 
 router = APIRouter(prefix="/auth", tags=["Auth"])
 
@@ -64,12 +69,14 @@ def login(
     usuario = UsuarioRepo.buscar_por_email(db, form.username)
 
     if not usuario or not _verificar_senha(form.password, usuario.senha_hash):
+        logger.warning(f"Tentativa de login falhou: {form.username}")
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="E-mail ou senha incorretos.",
             headers={"WWW-Authenticate": "Bearer"},
         )
 
+    logger.info(f"Login bem-sucedido: {form.username}")
     token = _criar_token({"sub": str(usuario.id), "email": usuario.email})
 
     return {

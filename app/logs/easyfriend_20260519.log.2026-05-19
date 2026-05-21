@@ -1,0 +1,265 @@
+2026-05-19 22:11:00 [INFO] main: Tabelas verificadas/criadas no banco.
+2026-05-19 22:14:22 [INFO] main: Tabelas verificadas/criadas no banco.
+2026-05-19 19:57:39 [INFO] main: Tabelas verificadas/criadas no banco.
+2026-05-19 19:58:08 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:08 [INFO] main: >> GET /health
+2026-05-19 19:58:08 [DEBUG] main: Health check: banco OK.
+2026-05-19 19:58:08 [INFO] main: << GET /health - 200
+2026-05-19 19:58:08 [INFO] httpx: HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-05-19 19:58:10 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:10 [INFO] main: >> POST /auth/login
+2026-05-19 19:58:10 [DEBUG] python_multipart.multipart: Calling on_field_start with no data
+2026-05-19 19:58:10 [DEBUG] python_multipart.multipart: Calling on_field_name with data[0:8]
+2026-05-19 19:58:10 [DEBUG] python_multipart.multipart: Calling on_field_data with data[9:25]
+2026-05-19 19:58:10 [DEBUG] python_multipart.multipart: Calling on_field_end with no data
+2026-05-19 19:58:10 [DEBUG] python_multipart.multipart: Calling on_field_start with no data
+2026-05-19 19:58:10 [DEBUG] python_multipart.multipart: Calling on_field_name with data[26:34]
+2026-05-19 19:58:10 [DEBUG] python_multipart.multipart: Calling on_field_data with data[35:43]
+2026-05-19 19:58:10 [DEBUG] python_multipart.multipart: Calling on_field_end with no data
+2026-05-19 19:58:10 [DEBUG] python_multipart.multipart: Calling on_end with no data
+2026-05-19 19:58:10 [INFO] routes.auth: Login bem-sucedido: alice@test.com
+2026-05-19 19:58:11 [INFO] main: << POST /auth/login - 200
+2026-05-19 19:58:11 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-19 19:58:12 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:12 [INFO] main: >> POST /auth/login
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_field_start with no data
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_field_name with data[0:8]
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_field_data with data[9:25]
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_field_end with no data
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_field_start with no data
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_field_name with data[26:34]
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_field_data with data[35:41]
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_field_end with no data
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_end with no data
+2026-05-19 19:58:12 [WARNING] routes.auth: Tentativa de login falhou: alice@test.com
+2026-05-19 19:58:12 [INFO] main: << POST /auth/login - 401
+2026-05-19 19:58:12 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 401 Unauthorized"
+2026-05-19 19:58:12 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:12 [INFO] main: >> POST /auth/login
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_field_start with no data
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_field_name with data[0:8]
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_field_data with data[9:25]
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_field_end with no data
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_field_start with no data
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_field_name with data[26:34]
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_field_data with data[35:36]
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_field_end with no data
+2026-05-19 19:58:12 [DEBUG] python_multipart.multipart: Calling on_end with no data
+2026-05-19 19:58:12 [WARNING] routes.auth: Tentativa de login falhou: nao@existe.com
+2026-05-19 19:58:12 [INFO] main: << POST /auth/login - 401
+2026-05-19 19:58:12 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 401 Unauthorized"
+2026-05-19 19:58:13 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:13 [INFO] main: >> POST /auth/login
+2026-05-19 19:58:13 [DEBUG] python_multipart.multipart: Calling on_field_start with no data
+2026-05-19 19:58:13 [DEBUG] python_multipart.multipart: Calling on_field_name with data[0:8]
+2026-05-19 19:58:13 [DEBUG] python_multipart.multipart: Calling on_field_data with data[9:25]
+2026-05-19 19:58:13 [DEBUG] python_multipart.multipart: Calling on_field_end with no data
+2026-05-19 19:58:13 [DEBUG] python_multipart.multipart: Calling on_field_start with no data
+2026-05-19 19:58:13 [DEBUG] python_multipart.multipart: Calling on_field_name with data[26:34]
+2026-05-19 19:58:13 [DEBUG] python_multipart.multipart: Calling on_field_data with data[35:43]
+2026-05-19 19:58:13 [DEBUG] python_multipart.multipart: Calling on_field_end with no data
+2026-05-19 19:58:13 [DEBUG] python_multipart.multipart: Calling on_end with no data
+2026-05-19 19:58:13 [INFO] routes.auth: Login bem-sucedido: alice@test.com
+2026-05-19 19:58:13 [INFO] main: << POST /auth/login - 200
+2026-05-19 19:58:13 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-19 19:58:13 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:13 [INFO] main: >> GET /auth/me
+2026-05-19 19:58:13 [INFO] main: << GET /auth/me - 200
+2026-05-19 19:58:13 [INFO] httpx: HTTP Request: GET http://testserver/auth/me "HTTP/1.1 200 OK"
+2026-05-19 19:58:14 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:14 [INFO] main: >> GET /auth/me
+2026-05-19 19:58:14 [INFO] main: << GET /auth/me - 401
+2026-05-19 19:58:14 [INFO] httpx: HTTP Request: GET http://testserver/auth/me "HTTP/1.1 401 Unauthorized"
+2026-05-19 19:58:14 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:14 [INFO] main: >> GET /auth/me
+2026-05-19 19:58:14 [INFO] main: << GET /auth/me - 401
+2026-05-19 19:58:14 [INFO] httpx: HTTP Request: GET http://testserver/auth/me "HTTP/1.1 401 Unauthorized"
+2026-05-19 19:58:15 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:15 [INFO] main: >> POST /radar/matches
+2026-05-19 19:58:15 [INFO] routes.radar: Criando match: 1 x 2
+2026-05-19 19:58:15 [INFO] main: << POST /radar/matches - 201
+2026-05-19 19:58:15 [INFO] httpx: HTTP Request: POST http://testserver/radar/matches "HTTP/1.1 201 Created"
+2026-05-19 19:58:17 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:17 [INFO] main: >> POST /radar/matches
+2026-05-19 19:58:17 [INFO] routes.radar: Criando match: 1 x 9999
+2026-05-19 19:58:17 [WARNING] routes.radar: Match falhou: Um ou ambos os usuários não foram encontrados.
+2026-05-19 19:58:17 [INFO] main: << POST /radar/matches - 404
+2026-05-19 19:58:17 [INFO] httpx: HTTP Request: POST http://testserver/radar/matches "HTTP/1.1 404 Not Found"
+2026-05-19 19:58:19 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:19 [INFO] main: >> POST /radar/matches
+2026-05-19 19:58:19 [INFO] routes.radar: Criando match: 1 x 2
+2026-05-19 19:58:19 [INFO] main: << POST /radar/matches - 201
+2026-05-19 19:58:19 [INFO] httpx: HTTP Request: POST http://testserver/radar/matches "HTTP/1.1 201 Created"
+2026-05-19 19:58:19 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:19 [INFO] main: >> POST /radar/matches
+2026-05-19 19:58:19 [INFO] routes.radar: Criando match: 1 x 2
+2026-05-19 19:58:19 [INFO] main: << POST /radar/matches - 409
+2026-05-19 19:58:19 [INFO] httpx: HTTP Request: POST http://testserver/radar/matches "HTTP/1.1 409 Conflict"
+2026-05-19 19:58:20 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:20 [INFO] main: >> GET /radar/matches
+2026-05-19 19:58:20 [INFO] main: << GET /radar/matches - 200
+2026-05-19 19:58:20 [INFO] httpx: HTTP Request: GET http://testserver/radar/matches?criterio=idioma&valor=ja "HTTP/1.1 200 OK"
+2026-05-19 19:58:20 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:20 [INFO] main: >> GET /radar/matches
+2026-05-19 19:58:20 [INFO] main: << GET /radar/matches - 200
+2026-05-19 19:58:20 [INFO] httpx: HTTP Request: GET http://testserver/radar/matches?criterio=pais_origem&valor=Brasil "HTTP/1.1 200 OK"
+2026-05-19 19:58:21 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:21 [INFO] main: >> GET /radar/matches
+2026-05-19 19:58:21 [INFO] main: << GET /radar/matches - 400
+2026-05-19 19:58:21 [INFO] httpx: HTTP Request: GET http://testserver/radar/matches?criterio=invalido&valor=x "HTTP/1.1 400 Bad Request"
+2026-05-19 19:58:22 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:22 [INFO] main: >> GET /radar/matches
+2026-05-19 19:58:22 [INFO] main: << GET /radar/matches - 200
+2026-05-19 19:58:22 [INFO] httpx: HTTP Request: GET http://testserver/radar/matches?criterio=idioma&valor=ja "HTTP/1.1 200 OK"
+2026-05-19 19:58:22 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:22 [INFO] main: >> POST /chat/mensagens
+2026-05-19 19:58:22 [INFO] routes.chat: Mensagem de 1 -> 2
+2026-05-19 19:58:23 [INFO] main: << POST /chat/mensagens - 201
+2026-05-19 19:58:23 [INFO] httpx: HTTP Request: POST http://testserver/chat/mensagens "HTTP/1.1 201 Created"
+2026-05-19 19:58:23 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:23 [INFO] main: >> POST /chat/mensagens
+2026-05-19 19:58:23 [INFO] routes.chat: Mensagem de 9999 -> 1
+2026-05-19 19:58:23 [INFO] main: << POST /chat/mensagens - 404
+2026-05-19 19:58:23 [INFO] httpx: HTTP Request: POST http://testserver/chat/mensagens "HTTP/1.1 404 Not Found"
+2026-05-19 19:58:25 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:25 [INFO] main: >> POST /chat/mensagens
+2026-05-19 19:58:31 [INFO] routes.chat: Mensagem de 1 -> 9999
+2026-05-19 19:58:31 [INFO] main: << POST /chat/mensagens - 404
+2026-05-19 19:58:31 [INFO] httpx: HTTP Request: POST http://testserver/chat/mensagens "HTTP/1.1 404 Not Found"
+2026-05-19 19:58:30 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:30 [INFO] main: >> POST /chat/mensagens
+2026-05-19 19:58:30 [INFO] routes.chat: Mensagem de 1 -> 2
+2026-05-19 19:58:31 [INFO] main: << POST /chat/mensagens - 201
+2026-05-19 19:58:31 [INFO] httpx: HTTP Request: POST http://testserver/chat/mensagens "HTTP/1.1 201 Created"
+2026-05-19 19:58:31 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:31 [INFO] main: >> GET /chat/mensagens/1
+2026-05-19 19:58:31 [INFO] main: << GET /chat/mensagens/1 - 200
+2026-05-19 19:58:31 [INFO] httpx: HTTP Request: GET http://testserver/chat/mensagens/1 "HTTP/1.1 200 OK"
+2026-05-19 19:58:31 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:31 [INFO] main: >> GET /chat/mensagens/9999
+2026-05-19 19:58:31 [INFO] main: << GET /chat/mensagens/9999 - 404
+2026-05-19 19:58:31 [INFO] httpx: HTTP Request: GET http://testserver/chat/mensagens/9999 "HTTP/1.1 404 Not Found"
+2026-05-19 19:58:32 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:32 [INFO] main: >> POST /chat/mensagens
+2026-05-19 19:58:32 [INFO] routes.chat: Mensagem de 1 -> 2
+2026-05-19 19:58:32 [INFO] main: << POST /chat/mensagens - 201
+2026-05-19 19:58:32 [INFO] httpx: HTTP Request: POST http://testserver/chat/mensagens "HTTP/1.1 201 Created"
+2026-05-19 19:58:32 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:32 [INFO] main: >> POST /chat/mensagens
+2026-05-19 19:58:32 [INFO] routes.chat: Mensagem de 2 -> 1
+2026-05-19 19:58:33 [INFO] main: << POST /chat/mensagens - 201
+2026-05-19 19:58:33 [INFO] httpx: HTTP Request: POST http://testserver/chat/mensagens "HTTP/1.1 201 Created"
+2026-05-19 19:58:33 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:33 [INFO] main: >> GET /chat/conversa
+2026-05-19 19:58:33 [INFO] main: << GET /chat/conversa - 200
+2026-05-19 19:58:33 [INFO] httpx: HTTP Request: GET http://testserver/chat/conversa?usuario_id_1=1&usuario_id_2=2 "HTTP/1.1 200 OK"
+2026-05-19 19:58:34 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:34 [INFO] main: >> GET /chat/conversa
+2026-05-19 19:58:34 [INFO] main: << GET /chat/conversa - 200
+2026-05-19 19:58:34 [INFO] httpx: HTTP Request: GET http://testserver/chat/conversa?usuario_id_1=1&usuario_id_2=2 "HTTP/1.1 200 OK"
+2026-05-19 19:58:35 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:35 [INFO] main: >> POST /agenda/eventos
+2026-05-19 19:58:35 [INFO] main: << POST /agenda/eventos - 201
+2026-05-19 19:58:35 [INFO] httpx: HTTP Request: POST http://testserver/agenda/eventos "HTTP/1.1 201 Created"
+2026-05-19 19:58:36 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:36 [INFO] main: >> GET /agenda/eventos
+2026-05-19 19:58:36 [INFO] main: << GET /agenda/eventos - 200
+2026-05-19 19:58:36 [INFO] httpx: HTTP Request: GET http://testserver/agenda/eventos?criterio=tipo&valor=gastronomia "HTTP/1.1 200 OK"
+2026-05-19 19:58:38 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:38 [INFO] main: >> GET /agenda/eventos
+2026-05-19 19:58:38 [INFO] main: << GET /agenda/eventos - 200
+2026-05-19 19:58:38 [INFO] httpx: HTTP Request: GET http://testserver/agenda/eventos?criterio=idioma&valor=ja "HTTP/1.1 200 OK"
+2026-05-19 19:58:40 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:40 [INFO] main: >> GET /agenda/eventos
+2026-05-19 19:58:40 [INFO] main: << GET /agenda/eventos - 200
+2026-05-19 19:58:40 [INFO] httpx: HTTP Request: GET http://testserver/agenda/eventos?criterio=tipo&valor=tipo_inexistente "HTTP/1.1 200 OK"
+2026-05-19 19:58:41 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:41 [INFO] main: >> GET /agenda/eventos
+2026-05-19 19:58:41 [INFO] main: << GET /agenda/eventos - 400
+2026-05-19 19:58:41 [INFO] httpx: HTTP Request: GET http://testserver/agenda/eventos?criterio=invalido&valor=x "HTTP/1.1 400 Bad Request"
+2026-05-19 19:58:42 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:42 [INFO] main: >> POST /agenda/eventos
+2026-05-19 19:58:42 [INFO] main: << POST /agenda/eventos - 201
+2026-05-19 19:58:42 [INFO] httpx: HTTP Request: POST http://testserver/agenda/eventos "HTTP/1.1 201 Created"
+2026-05-19 19:58:43 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:43 [INFO] main: >> POST /apadrinhamento/solicitar
+2026-05-19 19:58:43 [INFO] routes.apadrinhamento: Solicitação de apadrinhamento: padrinho=1 afilhado=2
+2026-05-19 19:58:43 [INFO] main: << POST /apadrinhamento/solicitar - 201
+2026-05-19 19:58:43 [INFO] httpx: HTTP Request: POST http://testserver/apadrinhamento/solicitar "HTTP/1.1 201 Created"
+2026-05-19 19:58:43 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:43 [INFO] main: >> POST /apadrinhamento/solicitar
+2026-05-19 19:58:43 [INFO] routes.apadrinhamento: Solicitação de apadrinhamento: padrinho=9999 afilhado=1
+2026-05-19 19:58:43 [INFO] main: << POST /apadrinhamento/solicitar - 404
+2026-05-19 19:58:43 [INFO] httpx: HTTP Request: POST http://testserver/apadrinhamento/solicitar "HTTP/1.1 404 Not Found"
+2026-05-19 19:58:44 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:44 [INFO] main: >> POST /apadrinhamento/solicitar
+2026-05-19 19:58:44 [INFO] routes.apadrinhamento: Solicitação de apadrinhamento: padrinho=1 afilhado=9999
+2026-05-19 19:58:44 [INFO] main: << POST /apadrinhamento/solicitar - 404
+2026-05-19 19:58:44 [INFO] httpx: HTTP Request: POST http://testserver/apadrinhamento/solicitar "HTTP/1.1 404 Not Found"
+2026-05-19 19:58:45 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:45 [INFO] main: >> POST /apadrinhamento/solicitar
+2026-05-19 19:58:45 [INFO] routes.apadrinhamento: Solicitação de apadrinhamento: padrinho=1 afilhado=2
+2026-05-19 19:58:45 [INFO] main: << POST /apadrinhamento/solicitar - 201
+2026-05-19 19:58:45 [INFO] httpx: HTTP Request: POST http://testserver/apadrinhamento/solicitar "HTTP/1.1 201 Created"
+2026-05-19 19:58:45 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:45 [INFO] main: >> PATCH /apadrinhamento/1/aceitar
+2026-05-19 19:58:45 [INFO] routes.apadrinhamento: Aceitando apadrinhamento id=1
+2026-05-19 19:58:45 [INFO] main: << PATCH /apadrinhamento/1/aceitar - 200
+2026-05-19 19:58:45 [INFO] httpx: HTTP Request: PATCH http://testserver/apadrinhamento/1/aceitar "HTTP/1.1 200 OK"
+2026-05-19 19:58:46 [DEBUG] asyncio: Using selector: EpollSelector
+2026-05-19 19:58:46 [INFO] main: >> PATCH /apadrinhamento/9999/aceitar
+2026-05-19 19:58:46 [INFO] routes.apadrinhamento: Aceitando apadrinhamento id=9999
+2026-05-19 19:58:46 [INFO] main: << PATCH /apadrinhamento/9999/aceitar - 404
+2026-05-19 19:58:46 [INFO] httpx: HTTP Request: PATCH http://testserver/apadrinhamento/9999/aceitar "HTTP/1.1 404 Not Found"
+2026-05-19 23:43:16 [INFO] main: Tabelas verificadas/criadas no banco.
+2026-05-19 23:43:32 [INFO] main: Tabelas verificadas/criadas no banco.
+2026-05-19 23:44:11 [DEBUG] watchfiles.main: 4 changes detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260519.log'), (<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-19 23:44:12 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-19 23:45:44 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260519.log')}
+2026-05-19 23:45:44 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-19 23:46:56 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260519.log')}
+2026-05-19 23:46:57 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-19 23:48:42 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260519.log')}
+2026-05-19 23:48:43 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-19 23:50:54 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260519.log')}
+2026-05-19 23:50:55 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-19 23:54:09 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260519.log')}
+2026-05-19 23:54:09 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-19 23:55:53 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260519.log')}
+2026-05-19 23:55:54 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-19 23:56:54 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260519.log')}
+2026-05-19 23:56:55 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-19 23:59:01 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260519.log')}
+2026-05-19 23:59:03 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-19 23:59:56 [DEBUG] watchfiles.main: 1 change detected: {(<Change.modified: 2>, '/app/logs/easyfriend_20260519.log')}
+2026-05-19 23:59:57 [DEBUG] watchfiles.main: 3 changes detected: {(<Change.deleted: 3>, '/app/venv/bin/python3'), (<Change.deleted: 3>, '/app/venv/bin/python'), (<Change.deleted: 3>, '/app/venv/bin/python3.12')}
+2026-05-20 00:10:57 [INFO] main: >> GET /docs
+2026-05-20 00:10:58 [INFO] main: << GET /docs - 200
+2026-05-20 00:10:59 [INFO] main: >> GET /openapi.json
+2026-05-20 00:11:01 [INFO] main: << GET /openapi.json - 200
+2026-05-20 00:11:26 [INFO] main: >> GET /radar/matches
+2026-05-20 00:11:29 [INFO] main: << GET /radar/matches - 200
+2026-05-20 00:21:48 [INFO] main: >> GET /radar/matches
+2026-05-20 00:21:50 [INFO] main: << GET /radar/matches - 200
+2026-05-20 00:57:25 [INFO] main: >> POST /radar/matches
+2026-05-20 00:57:28 [INFO] routes.radar: Criando match: 2 x 3
+2026-05-20 00:57:49 [INFO] main: >> GET /radar/matches
+2026-05-20 00:58:07 [INFO] main: << GET /radar/matches - 200
+2026-05-20 00:58:07 [INFO] main: << POST /radar/matches - 201
+2026-05-20 00:58:19 [INFO] main: >> POST /radar/matches
+2026-05-20 00:58:20 [INFO] routes.radar: Criando match: 2 x 3
+2026-05-20 00:58:20 [INFO] main: << POST /radar/matches - 409
+2026-05-20 00:58:44 [INFO] main: >> POST /radar/matches
+2026-05-20 00:58:44 [INFO] routes.radar: Criando match: 4 x 5
+2026-05-20 00:58:44 [INFO] main: << POST /radar/matches - 201
+2026-05-20 01:00:28 [INFO] main: >> POST /radar/matches
+2026-05-20 01:00:29 [INFO] routes.radar: Criando match: 4 x 5
+2026-05-20 01:00:32 [INFO] main: << POST /radar/matches - 409
+2026-05-20 01:02:00 [INFO] main: >> POST /radar/matches
+2026-05-20 01:02:02 [INFO] routes.radar: Criando match: 6 x 7
+2026-05-20 01:02:05 [INFO] main: << POST /radar/matches - 201
+2026-05-20 01:13:51 [INFO] main: >> POST /radar/matches
+2026-05-20 01:13:54 [INFO] routes.radar: Criando match: 8 x 9
+2026-05-20 01:14:00 [INFO] main: << POST /radar/matches - 201
+2026-05-20 01:14:05 [INFO] main: >> GET /radar/matches
+2026-05-20 01:14:06 [INFO] main: << GET /radar/matches - 200
